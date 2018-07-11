@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main, nav, section, header, footer {
+main, nav, section, header, footer, button {
     display: block;
 }
 
@@ -33,9 +33,9 @@ a:hover{
 body {
     width: 100%;
     height: auto;
-    font-family: Tahoma;
+    font-family: arial;
     color: #ffffff;
-    background: #001330;
+    background: #002255;
 }
 
 #wrapper {
@@ -109,6 +109,13 @@ body {
         border-radius: 8px;
     }
 
+    #userPic {
+        position: absolute;
+        top: 65px;
+        right: 18px;
+        z-index: 2;
+    }
+
     /**** NAV BAR ****/
 
     #navBar {
@@ -147,13 +154,37 @@ body {
     .mainSection {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
         height: auto;
         min-height: 200px;
         margin: 140px auto 0;
         margin-top: 140px;
+    }
+
+    #SortLocation, #SortTheme {
+        float: left;
+        position: relative;
+        width: 120px;
+        height: 25px;
+        font-size: .7rem;
+        padding: 6px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 30px;
+        top: 22px;
+        background-color: rgb(212, 212, 212);
+        border: solid #bebebe 1px;
+        border-radius: 3px;
+    }
+
+    #SortLocation {
+        left: 16px;
+    }
+
+    #SortTheme {
+        
+        left: 32px;  
     }
 
     .itemCard {
@@ -181,7 +212,7 @@ body {
 
     .titleCard {
         font-size: 1.2rem;
-        margin: 6px 0 0px;
+        margin: 6px 0 6px;
         color: #fff;
         font-weight: bold;
     }
@@ -198,7 +229,42 @@ body {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        color: #f0f0f0;
+        color: #bebebe;
+    }
+
+    /**** Empty Event List ****/
+
+    .msgContainer {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 20px;
+    }
+
+    .eventBigImg {
+        background: url("../images/eventsBigIcon.png") no-repeat;
+        width: 178px;
+        height: 168px;
+        margin: 0 auto;
+    }
+
+    .noEventMsg {
+        position: relative;
+        font-size: 1.8rem;
+        text-align: center;
+        top: 12px;
+    }
+
+    .recommendationsBtn {
+        position: relative;
+        top: 40px;
+        margin: 0 auto;
+        background: linear-gradient(#fff, #013a91);
+        border: none;
+        border-radius: 6px;
+        padding: 10px;
+        color: #002255;
+        font-weight: bold;
     }
 
     /**** BOTTOM NAV ****/
@@ -220,111 +286,7 @@ body {
         margin-top: 15px;
     }
 
-    /* #topheader {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        height: 120px;
-        background: rgb(1, 118, 126);
-        z-index: 1;
-    }
-
-    .logoContainer {
-        float: left;
-        position: relative;
-        overflow: auto;
-        left: 16px;
-        top: 16px;
-    }
-
-    #logoTitle {
-        margin: 0px;
-        font-size: 1rem;
-    }
-
-    #logo {
-        margin: 0 auto;
-        background: url("../images/logo.png") no-repeat;
-        width: 61px;
-        height: 60px;
-    }
-
-    #navBar {
-        position: absolute;
-        bottom: 0px;
-        float: left;
-        width: 100%;
-        height: auto;
-    }
-
-    #navBar ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        height: auto;
-        margin: 0px;
-    }
-
-    #navBar ul li {
-        opacity: .6;
-        width: 28%;
-        text-align: center;
-    }
-
-    #navBar ul .selected {
-       opacity: 1;
-       border-bottom: solid 2px #fff;
-   }
-
-   #hamburger {
-       position: absolute;
-       right: 20px;
-       top: 20px;
-   }
-
-   .bar1, .bar2, .bar3  {
-       width: 35px;
-       height: 3px;
-       background: #fff;
-       margin: 6px 0;
-       border-radius: 8px;
-   } */
-
- /* MAIN SECTION */
-   
-   /* #mainSection {
-       position: relative;
-       width: 100%;
-       height: auto;
-       min-height: 400px;
-   }
-
-   .itemCard {
-       position: relative;
-       padding-bottom: 15px;
-       border-bottom: solid 1px #fff;
-   }
-
-   .itemCard:last-child {
-       border: none;
-       padding-bottom: 50px;
-   }
-
-   .imgCard {
-       width: 95%;
-       margin: 20px 2% 0px;
-   }
-
-   .titleCard {
-       font-size: 1.2rem;
-       margin: 6px 2% 0px;
-   }
-
-   .descriptionCard {
-    font-size: .8rem;
-    margin: 6px 2% 0px;
-   } */
+    
    
 
 
