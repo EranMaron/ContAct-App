@@ -11,11 +11,15 @@ window.onload = function(){
         optionsShow(data);
     };
         myRequest.send();
-
+    
 };
 
+
+
+
+    /* Get Data From JSON */
+
 function optionsShow(_data) {
-    console.log("Func In");
     var locationOption = document.createElement("option");
     var locationList = document.getElementById("SortLocation");
     locationList.appendChild(locationOption);
@@ -28,7 +32,6 @@ function optionsShow(_data) {
     themeOption.disabled = true;
 
     for (var i = 0; i < _data.city.length; i++) {
-        console.log("for loop In" + i);
         locationOption = document.createElement("option");
         locationList = document.getElementById("SortLocation");
         locationList.appendChild(locationOption);
@@ -37,7 +40,6 @@ function optionsShow(_data) {
     }
 
     for (var i = 0; i < _data.theme.length; i++) {
-        console.log("for loop 2 In" + i);
         themeOption = document.createElement("option");
         themeList = document.getElementById("SortTheme");
         themeList.appendChild(themeOption);
