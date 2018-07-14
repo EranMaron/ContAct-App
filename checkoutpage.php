@@ -6,7 +6,9 @@
         <title>Main Page</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="includes/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        
+        <script src="includes/eventpagefunc.js"></script><meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="wrapper">
@@ -27,22 +29,17 @@
                 </a>
                 <nav id="navBar">
                     <ul>
-                        <li><a href="#">My Events</a></li>
-                        <li class="selected"><a href="#">Recommendeds</a></li>
-                        <li><a href="#">Populars</a></li>
+                        <i id="backButton" class="fas fa-arrow-left"></i>
+                        <li class="pageTitle"><a href="#">Event Page</a></li>
                     </ul>
                 </nav>
             </header>
             <main class="mainSection">
-                <select id="SortLocation" name="location" placeholder="Location...">
-                    
-                </select>
-                <select id="SortTheme" name="theme" placeholder="Theme...">
-                    
-                </select>
                 
-                <?php include ('action.php');?>
-                
+                    <?php 
+                        include('checkoutpageBuild.php');
+                    ?>
+
             </main>
             <footer>
                 <section id="bottomNav">
@@ -56,6 +53,5 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="includes/script.js"></script>
     </body>
 </html>

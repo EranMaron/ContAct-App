@@ -1,5 +1,5 @@
 <?php
-    //create a mySQL DB connection:
+
     $dbhost = "182.50.133.51";
     $dbuser = "studDB18A";
     $dbpass = "stud18aDB1!";

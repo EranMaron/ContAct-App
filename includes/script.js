@@ -1,6 +1,8 @@
 
 var locationList = document.getElementById("SortLocation");
 var themeList = document.getElementById("SortTheme");
+var eventNum;
+
 
 window.onload = function(){
 
@@ -14,6 +16,11 @@ window.onload = function(){
     
 };
 
+const events = document.querySelectorAll ('.itemCard');
+
+for (const itemCard of events) {
+    itemCard.addEventListener('click', eventOnclick);
+}
 
     /* Get Data From JSON */
 
@@ -45,4 +52,9 @@ function optionsShow(_data) {
         themeOption.value = _data.theme[i];
     }
 
-}
+};
+
+function eventOnclick() {
+    eventNum = this.getAttribute("id");
+    console.log(eventNum);
+};
