@@ -15,8 +15,6 @@ window.onload = function(){
 };
 
 
-
-
     /* Get Data From JSON */
 
 function optionsShow(_data) {

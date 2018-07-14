@@ -2,21 +2,23 @@
 	include('db.php');		
 
 
-	$query = "SELECT Event_Image FROM tb_events_201";
+	$query = "SELECT * FROM tb_events_201";
 	$result = mysqli_query($connection, $query);
 
 	if (!$result) {
 		die("DB query faild");
 	}
 
-	echo '<section class="itemCard">';
-	echo '<a href="#">';
+	
 	while ($row = mysqli_fetch_assoc($result)) {
-		echo
-	'<img class="imgCard" src="images/eventBanner-' . $row["Event_Image"] . '.jpg alt="Event Banner">';
-	/* <h2 class="titleCard">University Of Ohama</h2>'; */
+		echo '<section class="itemCard">';
+		echo '<a href="#">';
+		echo '<img class="imgCard" src="images/eventBanner-' . $row["Event_Image"] . '.jpg" alt="Event Banner">
+		<h2 class="titleCard">' . $row["Event_Name"] .'</h2>
+		<p class="descriptionCard">' . $row["Event_Details"] . '</p>';
+		echo '</a></section>';
 	}
-	echo '</a></section>';
+	
 
 
 	/* echo '<section class="itemCard">
