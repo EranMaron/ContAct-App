@@ -5,7 +5,9 @@
     $dbpass = "stud18aDB1!";
     $dbname = "studDB18A";
 
-    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);    
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);   
+    $connection1 = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    $connection2 = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);  
 
     //testing connection success
     if(mysqli_connect_errno()) {
