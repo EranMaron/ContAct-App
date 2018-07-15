@@ -300,6 +300,7 @@ body {
         position: relative;
         left: 20px;
     }
+<<<<<<< HEAD
 
     .eventPageContainer {
         position: relative;
@@ -337,6 +338,85 @@ body {
     .eventDetails {
         font-size: .8rem;
     }
+=======
+
+    .eventPageContainer {
+        position: relative;
+        margin: 16px 16px 0;
+        width: 100%;
+        max-width: 700px;
+        height: auto;\
+    }
+
+    .imageEventPage {
+        float: left;
+        width: 60%;
+        max-width: 352px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .registerBtn {
+        position: relative;
+        left: 20px;
+        top: 40px;
+        background: url("../images/registrationIcon.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+
+    .eventName {
+        position: relative;
+        margin-top: 16px;
+        font-size: 1.5rem;
+        color: #2b80ff;
+    }
+
+    .eventDetails {
+        font-size: .8rem;
+    }
+
+    .speakersContainer {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        margin-top: 16px;
+    }
+
+    .eventPageContainer:last-child {
+        margin-bottom: 80px;
+    }
+
+    .speakerImage {
+        float: left;
+        width: 80px;
+        height: 80px;
+        background: url("../images/speaker1.jpg") no-repeat; 
+    }
+
+    .speakerName {
+        position: relative;
+        left: 8px; 
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+    } 
+
+    .speakerDetails {
+        position: relative;
+        left: 8px;
+        font-size: .8rem;
+        line-height: 1.2;
+    }
+
+    .moreDetails {
+        position: relative;
+        top: 16px;
+        font-size: .8rem;
+        margin-bottom: 100px;
+    }
+   
+>>>>>>> 4dba40dea583ef9c2f05fbe0b1158210a2cb4f8b
 
     .speakersContainer {
         position: relative;

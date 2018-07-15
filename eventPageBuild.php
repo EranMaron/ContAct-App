@@ -15,7 +15,11 @@
 
     echo '<section class="eventPageContainer">
     <img class="imageEventPage" src="images/eventBanner-' . $row['Event_Image'] . '.jpg">
+<<<<<<< HEAD
     <a href="checkoutpage.php?id=' . $row['Event_Image'] . '"><button class="registerBtn"></button></a>
+=======
+    <button class="registerBtn"></button>
+>>>>>>> 4dba40dea583ef9c2f05fbe0b1158210a2cb4f8b
     <div class="clear"></div>
     <h2 class="eventName">' . $row['Event_Name'] . '</h2>
     <p class="eventDetails">' . $row['Event_Details'] . '</p>
