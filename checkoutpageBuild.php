@@ -1,7 +1,6 @@
 <?php
 
 include('db.php');
-<<<<<<< HEAD
 
 
 $eventNum = $_GET['id'];
@@ -19,15 +18,16 @@ $eventNum = $_GET['id'];
     echo '<section class="eventPageContainer">
             <img class="imageCheckoutPage" src="images/eventBanner-' . $row['Event_Image'] .'.jpg">
             <h2 class="eventName">' . $row['Event_Name'] . '</h2>
-            <form action="" method="post" id="checkoutForm">
+            <form action="action1.php" method="get" id="checkoutForm">
             <label id="lunch" for="lunch">Lunch:</label><br>
-                <input type="radio" id="radioBtn" name="parameters[]" value="withLunch">
+                <input type="radio" id="radioBtn" name="lunch" value=1>
                 <label id="withLunch" class="lunchLabel" for="withLunch">with Lunch</label><br>
-                <input type="radio" id="radioBtn" name="parameters[]" value="withOutLunch">
+                <input type="radio" id="radioBtn" name="lunch" value=0>
                 <label id="withOutLunch" class="lunchLabel" for="withOutLunch">with Out Lunch</label><br>
                 <label id="Tickets" for="Tickets">Number Of Tickets:</label>
-                <input type="number" id="numberInput" name="parameters[]" min="0" max="5">
-                <button type="submit" id="submit">Apllay</button>
+                <input type="number" id="numberInput" name="numofticket" min="0" max="5">
+                <input type="hidden" name="index" value='. $eventNum.'>
+                <button type="submit" id="submit">Apply</button>
             </form>
         </section>';
 
@@ -51,6 +51,3 @@ $eventNum = $_GET['id'];
             <button type="submit" id="submit">Apllay</button>
         </form>
     </section>  */
-=======
-echo 'Check Out';
->>>>>>> 22c9c26be53c238789795c132d68e972a9356d8d

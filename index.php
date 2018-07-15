@@ -27,7 +27,7 @@
                 </a>
                 <nav id="navBar">
                     <ul>
-                        <li><a href="#">My Events</a></li>
+                        <li><a href="my_event.php">My Events</a></li>
                         <li class="selected"><a href="#">Recommendeds</a></li>
                         <li><a href="#">Populars</a></li>
                     </ul>

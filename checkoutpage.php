@@ -13,7 +13,7 @@
     <body>
         <div id="wrapper">
             <header id="topHeader">
-                <a class="logoContainer" href="#">
+                <a class="logoContainer" href="index.php">
                     <h1 id="logoTitle">CONTACT</h1>
                     <article id="logo"></article>
                 </a>
