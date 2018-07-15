@@ -1,6 +1,7 @@
 <?php
 
 include('db.php');
+<<<<<<< HEAD
 
 
 $eventNum = $_GET['id'];
@@ -50,3 +51,6 @@ $eventNum = $_GET['id'];
             <button type="submit" id="submit">Apllay</button>
         </form>
     </section>  */
+=======
+echo 'Check Out';
+>>>>>>> 22c9c26be53c238789795c132d68e972a9356d8d
