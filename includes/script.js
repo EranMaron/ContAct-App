@@ -1,6 +1,8 @@
 
 var locationList = document.getElementById("SortLocation");
 var themeList = document.getElementById("SortTheme");
+var eventNum;
+
 
 window.onload = function(){
 
@@ -11,11 +13,18 @@ window.onload = function(){
         optionsShow(data);
     };
         myRequest.send();
-
+    
 };
 
+const events = document.querySelectorAll ('.itemCard');
+
+for (const itemCard of events) {
+    itemCard.addEventListener('click', eventOnclick);
+}
+
+    /* Get Data From JSON */
+
 function optionsShow(_data) {
-    console.log("Func In");
     var locationOption = document.createElement("option");
     var locationList = document.getElementById("SortLocation");
     locationList.appendChild(locationOption);
@@ -28,7 +37,6 @@ function optionsShow(_data) {
     themeOption.disabled = true;
 
     for (var i = 0; i < _data.city.length; i++) {
-        console.log("for loop In" + i);
         locationOption = document.createElement("option");
         locationList = document.getElementById("SortLocation");
         locationList.appendChild(locationOption);
@@ -37,7 +45,6 @@ function optionsShow(_data) {
     }
 
     for (var i = 0; i < _data.theme.length; i++) {
-        console.log("for loop 2 In" + i);
         themeOption = document.createElement("option");
         themeList = document.getElementById("SortTheme");
         themeList.appendChild(themeOption);
@@ -45,4 +52,9 @@ function optionsShow(_data) {
         themeOption.value = _data.theme[i];
     }
 
-}
+};
+
+function eventOnclick() {
+    eventNum = this.getAttribute("id");
+    console.log(eventNum);
+};

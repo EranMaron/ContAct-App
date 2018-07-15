@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Event-Page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet"> <!-- Quicksand Font-->
+        <link rel="stylesheet" type="text/css" href="includes/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="topHeader">
+                <a class="logoContainer" href="#">
+                    <h1 id="logoTitle">CONTACT</h1>
+                    <article id="logo"></article>
+                </a>
+                <section id="hamburger">
+                    <button id="hamburgerBtn" type="button">
+                        <article class="bar1"></article>
+                        <article class="bar2"></article>
+                        <article class="bar3"></article>
+                    </button>
+                </section>
+                <a id="userPic" href="#">
+                    <img src="./images/user.png">
+                </a>
+                <nav id="navBar">
+                    <ul>
+                        <i id="backButton" class="fas fa-arrow-left"></i>
+                        <li class="pageTitle"><a href="#">Event Page</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="mainSection">
+                <section class="eventPageContainer">
+                    <img class="imageCheckoutPage" src="images/eventBanner-1.jpg">
+                    <h2 class="eventName">Event Name</h2>
+                    <form action="" method="post" id="checkoutForm">
+                        <label id="lunch" for="lunch">Lunch:</label><br>
+                        <input type="radio" id="radioBtn" name="parameters[]" value="withLunch">
+                        <label id="withLunch" class="lunchLabel" for="withLunch">with Lunch</label><br>
+                        <input type="radio" id="radioBtn" name="parameters[]" value="withOutLunch">
+                        <label id="withOutLunch" class="lunchLabel" for="withOutLunch">with Out Lunch</label><br>
+                        <label id="Tickets" for="Tickets">Number Of Tickets:</label><br>
+                        <input type="number" id="numberInput" name="parameters[]" min="0" max="5">
+                        <button type="submit" id="submit">Apllay</button>
+                    </form>
+                </section>   
+            </main>
+            <footer>
+                <section id="bottomNav">
+                    <a href="#" class="bottomIcon"><img src="./images/profile.png" alt="Profile Icon"></a>
+                    <a href="#" class="bottomIcon"><img src="./images/messagesicon.png" alt="Message Icon"></a>
+                    <a href="#" class="bottomIcon"><img src="./images/eventsiconbottombar.png" alt="Event Icon"></a>
+                    <a href="#" class="bottomIcon"><img src="./images/businesscardsicon.png" alt="Business Card Icon"></a>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

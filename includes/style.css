@@ -191,7 +191,7 @@ body {
         position: relative;
         margin: 16px 16px 0;
         width: 100%;
-        max-width: 500px;
+        max-width: 700px;
         height: auto;
         max-height: 200px;
         padding-bottom: 32px;
@@ -286,14 +286,129 @@ body {
         margin-top: 15px;
     }
 
-    
+    /* Event Page */
+
+
+    .fa-arrow-left {
+        position: relative;
+        float: left;
+        top: 28px;
+        left: 16px;
+    }
+
+    .pageTitle {
+        position: relative;
+        left: 20px;
+    }
+
+    .eventPageContainer {
+        position: relative;
+        margin: 16px 16px 0;
+        width: 100%;
+        max-width: 700px;
+        height: auto;\
+    }
+
+    .imageEventPage {
+        float: left;
+        width: 60%;
+        max-width: 352px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .registerBtn {
+        position: relative;
+        left: 20px;
+        top: 40px;
+        background: url("../images/registrationIcon.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+
+    .eventName {
+        position: relative;
+        margin-top: 16px;
+        font-size: 1.5rem;
+        color: #2b80ff;
+    }
+
+    .eventDetails {
+        font-size: .8rem;
+    }
+
+    .speakersContainer {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        margin-top: 16px;
+    }
+
+    .eventPageContainer:last-child {
+        margin-bottom: 80px;
+    }
+
+    .speakerImage {
+        float: left;
+        width: 80px;
+        height: 80px;
+        background: url("../images/speaker1.jpg") no-repeat; 
+    }
+
+    .speakerName {
+        position: relative;
+        left: 8px; 
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+    } 
+
+    .speakerDetails {
+        position: relative;
+        left: 8px;
+        font-size: .8rem;
+        line-height: 1.2;
+    }
+
+    .moreDetails {
+        position: relative;
+        top: 16px;
+        font-size: .8rem;
+        margin-bottom: 100px;
+    }
    
+    /* Check Out Page */
 
+    .imageCheckoutPage {
+        width: 90%;
+        max-width: 352px;
+        height: auto;
+        margin: 0 auto;
+    }
 
+    #lunch {
+        font-size: 1.2rem;
+    }
 
+    .lunchLabel {
+        padding-left: 8px;
+    }
 
+    #numberInput {
+        margin-left: 16px;
+    }
 
-
-
+    #submit {
+        position: relative;
+        width: 100px;
+        top: 40px;
+        margin: 0 auto;
+        background: linear-gradient(#fff, #013a91);
+        border: none;
+        border-radius: 6px;
+        padding: 10px;
+        color: #002255;
+        font-weight: bold;
+    }
 
 }
